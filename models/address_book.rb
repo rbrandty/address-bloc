@@ -16,7 +16,7 @@ class AddressBook
     delete_entry = nil
 
     @entries.each do |entry|
-      if name == entry.name && phone == entry.phone_nmber && email == entry.email
+      if name == entry.name && phone_number == entry.phone_number && email == entry.email
         delete_entry = entry
       end
     end
@@ -49,7 +49,7 @@ class AddressBook
   end
 
   def iterative_search(name)
-    @entries. do |entry|
+    @entries.each do |entry|
       if entry.name == name
         return entry
       end
